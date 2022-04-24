@@ -15,9 +15,14 @@
 }
 
 /* 1. Estilos gerais */
+
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background-color: var(--clr-white);
-	font-family: var(--f-primary);
+	font-family: var(--ff-primary);
 }
 
 a, 
@@ -363,4 +368,20 @@ p {
 
 /* 9. Footer */
 
+.footer {
+	background-color: var(--clr-pink-light);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 55px calc( (100% - 960px) / 2 );
+}
 
+.footer__copyright{
+	font-family: var(--ff-primary);
+	font-style: italic;
+}
+
+.footer__copyright, .footer__logo {
+	padding-left: 10px;
+	padding-right: 10px;
+}
